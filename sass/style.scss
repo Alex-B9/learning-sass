@@ -1,6 +1,54 @@
-body {
-    background-color: black;
+@import "./libs/reset.scss" ;
+
+$border-color: rgb(255, 255, 255);
+
+.body{
+    width: 100vw;
+    height: 100vh;
 }
-body h1{
-    font-style: italic;
+.content-piou{
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    height: 50vh;
+    align-items: center;
+
+    .piou{
+        border: 5px solid $border-color;
+        width: 25vw;
+        height: 13vh;
+
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        p{
+            margin-top: 13px;
+        }
+        &:hover{
+            border: 5px solid #fff;
+        width: 25vw;
+        height: 13vh;
+
+        color: #000;
+        text-align: center;
+        background-color: #fff;
+        }
+    }
+    .deux{
+            transform: scale(1);
+            transition-property: transform;
+            &:hover{
+                transform: scale(1.6);
+                transition: transform 800ms;
+            }
+        }
+        .trois{
+            &:hover{
+              transform: translateX(50px);
+            transition: transform 800ms;  
+            }
+            
+        }
 }
