@@ -23,6 +23,8 @@ $border-color: rgb(255, 255, 255);
         color: white;
         text-align: center;
         line-height: 50px;
+        
+        transition: 800ms ease;
         p{
             margin-top: 13px;
         }
@@ -34,6 +36,9 @@ $border-color: rgb(255, 255, 255);
         color: #000;
         text-align: center;
         background-color: #fff;
+        
+        
+        transition: 800ms ease;
         }
     }
     .deux{
@@ -47,8 +52,30 @@ $border-color: rgb(255, 255, 255);
         .trois{
             &:hover{
               transform: translateX(50px);
-            transition: transform 800ms;  
+              transition: transform 800ms;  
             }
             
         }
+}
+.content-inde{
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    height: 50vh;
+    align-items: center;
+
+    .content{
+        border: 1px solid $border-color;
+        width: 22.78vw;
+        height: 60vh;
+        text-align: center;
+        vertical-align: middle;
+
+        img{
+            height: 35.01vh;
+            width: 22.78vw;
+            position: relative;
+            padding-top: 5vh;
+        }
+    }
 }

@@ -64,6 +64,7 @@ td, th {
   color: white;
   text-align: center;
   line-height: 50px;
+  transition: 800ms ease;
 }
 .content-piou .piou p {
   margin-top: 13px;
@@ -75,6 +76,7 @@ td, th {
   color: #000;
   text-align: center;
   background-color: #fff;
+  transition: 800ms ease;
 }
 .content-piou .deux {
   transform: scale(1);
@@ -87,6 +89,27 @@ td, th {
 .content-piou .trois:hover {
   transform: translateX(50px);
   transition: transform 800ms;
+}
+
+.content-inde {
+  display: flex;
+  justify-content: space-around;
+  background-color: gray;
+  height: 50vh;
+  align-items: center;
+}
+.content-inde .content {
+  border: 1px solid white;
+  width: 22.78vw;
+  height: 60vh;
+  text-align: center;
+  vertical-align: middle;
+}
+.content-inde .content img {
+  height: 35.01vh;
+  width: 22.78vw;
+  position: relative;
+  padding-top: 5vh;
 }
 
 /*# sourceMappingURL=style.css.map */
