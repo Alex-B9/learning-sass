@@ -1,4 +1,236 @@
-.box {
-  border: 1px solid #ccc;
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 98.93vw;
+  height: 100vh;
+}
+
+body .content-piou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 50vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .content-piou .piou {
+  border: 5px solid white;
+  width: 384px;
+  height: 92.82px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  -webkit-transition: 800ms ease;
+  transition: 800ms ease;
+}
+
+body .content-piou .piou p {
+  margin-top: 13px;
+}
+
+body .content-piou .piou:hover {
+  border: 5px solid white;
+  width: 384px;
+  height: 92.82px;
+  color: black;
+  text-align: center;
+  background-color: white;
+  -webkit-transition: 800ms ease;
+  transition: 800ms ease;
+}
+
+body .content-piou .deux {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+body .content-piou .deux:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+}
+
+body .content-piou .trois:hover {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+}
+
+body .content-inde {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #cabfbf;
+  padding-top: 2%;
+}
+
+body .content-inde .contenu {
+  display: block;
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  overflow: hidden;
+}
+
+body .content-inde .contenu:hover .over {
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+}
+
+body .content-inde .contentimg {
+  width: 100%;
+  height: 75%;
+  background-image: url("/Assets/images/Capture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+body .content-inde .contentimg .date {
+  text-align: center;
+  background-color: #E74C3C;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .content-inde .contentimg .date span {
+  color: white;
+  font-size: 15px;
+  line-height: 0.8em;
+}
+
+body .content-inde .contentimg .phototxt {
+  background-color: #E74C3C;
+  color: white;
+  position: absolute;
+  bottom: -3px;
+}
+
+body .content-inde .contentxt {
+  width: 100%;
+}
+
+body .content-inde .contentxt .txt {
+  padding-left: 10px;
+  line-height: 2em;
+}
+
+body .content-inde .contentxt .txt h1 {
+  font-size: 20px;
+}
+
+body .content-inde .contentxt .txt h2 {
+  color: #BB6E71;
+  font-size: 18px;
+}
+
+body .content-inde .contentxt .over {
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+}
+
+body .content-inde .contentxt .over:hover {
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+}
+
+body .content-inde .commentaires {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  bottom: 35px;
 }
 /*# sourceMappingURL=style.css.map */
